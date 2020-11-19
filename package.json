@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "umi watch together server",
+  "main": "index.js",
+  "author": "Zach Bruggeman",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "iron": "^4.0.4",
+    "popura": "^1.2.5"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cross-env IRON_TOKEN=EXAMPLE_TOKEN_PLEASE_DONT_USE_IN_PRODUCTION nodemon index.js"
+  },
+  "now": {
+    "alias": "umi-watch-api",
+    "env": {
+      "IRON_TOKEN": "@iron-token"
+    }
+  }
+}
