@@ -2,7 +2,7 @@ const express = require('express')
 const axios = require('axios')
 const {json} = require('body-parser')
 const popura = require('popura')
-const Iron = require('iron')
+const Iron = require('@hapi/iron')
 
 const {IRON_TOKEN} = process.env.IRON_TOKEN
 
